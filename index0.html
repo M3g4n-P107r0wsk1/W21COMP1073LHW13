@@ -31,11 +31,11 @@
 		verseChoose.addEventListener("change", function(){
 			let verse = verseChoose.value;
 			console.log(verse);
-			updateDisplay(verse)
+			updateDisplay(verse);
 		});
 		
 		// STEP 3: Construct updateDisplay() function
-		function updateDisplay() {
+		function updateDisplay(verse) {
 			// STEP 4: Declare and initialize URL to point to text file(s)
 			let url = verse + ".txt";
 			// STEP 5: Build fetch() with promises
